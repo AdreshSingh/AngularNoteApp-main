@@ -155,3 +155,58 @@ UPDATE src/app/note-details/note-details.component.ts (705 bytes)
   Migration completed (No changes made).
 
 ## Version: 20 to 21
+** Executing migrations of package '@angular/cli' **
+
+❯ Remove any karma configuration files that only contain the default content.
+  The default configuration is automatically available without a specific project file.
+  Migration completed (No changes made).
+
+❯ Update 'moduleResolution' to 'bundler' in TypeScript configurations.
+  You can read more about this, here: https://www.typescriptlang.org/tsconfig/#moduleResolution     
+  Migration completed (No changes made).
+
+❯ Updates the 'lib' property in tsconfig files to use 'es2022' or a more modern version.
+UPDATE tsconfig.json (882 bytes)
+  Migration completed (1 file modified).
+
+** Optional migrations of package '@angular/cli' **
+
+This package has 1 optional migration that can be executed.
+Optional migrations may be skipped and executed after the update process, if preferred.
+
+Select the migrations that you'd like to run [use-application-builder] Migrate application projects 
+to the new build system. (https://angular.dev/tools/cli/build-system-migration)
+
+❯ Migrate application projects to the new build system.
+  Application projects that are using the '@angular-devkit/build-angular' package's 'browser' and/or 'browser-esbuild' builders will be migrated to use the new 'application' builder.
+  You can read more about this, including known issues and limitations, here: https://angular.dev/tools/cli/build-system-migration
+  Migration completed (No changes made).
+
+** Executing migrations of package '@angular/core' **
+
+❯ Adds `BootstrapContext` to `bootstrapApplication` calls in `main.server.ts` to support server rendering.
+  Migration completed (No changes made).
+
+❯ Moves imports of `ApplicationConfig` from `@angular/platform-browser` to `@angular/core`.
+  Migration completed (No changes made).
+
+❯ Migrates deprecated bootstrap options to providers.
+UPDATE src/main.ts (340 bytes)
+  Migration completed (1 file modified).
+
+❯ Converts the entire application to block control flow syntax.
+  Migration completed (No changes made).
+
+❯ Ensures that the Router.lastSuccessfulNavigation signal is now invoked.
+  Migration completed (No changes made).
+
+** Optional migrations of package '@angular/core' **
+
+This package has 1 optional migration that can be executed.
+Optional migrations may be skipped and executed after the update process, if preferred.
+
+Select the migrations that you'd like to run [router-current-navigation] Replaces usages of the     
+deprecated Router.getCurrentNavigation method with the Router.currentNavigation signal.
+
+❯ Replaces usages of the deprecated Router.getCurrentNavigation method with the Router.currentNavigation signal.
+  Migration completed (No changes made).
