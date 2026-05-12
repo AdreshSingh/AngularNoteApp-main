@@ -60,3 +60,26 @@ as it is no longer a direct dependency of '@angular-devkit/build-angular'.
 > Updates two-way bindings that have an invalid expression to use the longform expression instead.  
   Migration completed (No changes made).
 
+## Version: 17 to 18
+❯ Migrate application projects to the new build system.
+  Application projects that are using the '@angular-devkit/build-angular' package's 'browser' and/or 'browser-esbuild' builders will be migrated to use the new 'application' builder.
+  You can read more about this, including known issues and limitations, here: https://angular.dev/tools/cli/build-system-migration
+    The output location of the browser build has been updated from "dist/angular-note-app" to "dist/angular-note-app/browser". You might need to adjust your deployment pipeline or, as an alternative, 
+set outputPath.browser to "" in order to maintain the previous functionality.
+UPDATE angular.json (2805 bytes)
+UPDATE tsconfig.json (931 bytes)
+  Migration completed (2 files modified).
+
+** Executing migrations of package '@angular/core' **
+
+❯ Updates two-way bindings that have an invalid expression to use the longform expression instead.
+  Migration completed (No changes made).
+
+❯ Replace deprecated HTTP related modules with provider functions.
+  Migration completed (No changes made).
+
+❯ Updates calls to afterRender with an explicit phase to the new API.
+  Migration completed (No changes made).
+
+❯ Adds `BootstrapContext` to `bootstrapApplication` calls in `main.server.ts` to support server rendering.
+  Migration completed (No changes made).
