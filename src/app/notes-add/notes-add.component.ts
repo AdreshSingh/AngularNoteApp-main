@@ -5,8 +5,8 @@ import { Notes } from '../notes';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-notes-add',
-  template: `
+    selector: 'app-notes-add',
+    template: `
   <div class="card my-5 mx-5">
     <h3 class="container-fluid bg-primary jumbotron text-light">Add more Notes</h3>
     <form class="row bg-subtle card-body" [formGroup]="addNotes" (submit)="submitNotes()">
@@ -23,7 +23,8 @@ import { Router } from '@angular/router';
     </form>
   </div>
   `,
-  styleUrls: ['./notes-add.component.css']
+    styleUrls: ['./notes-add.component.css'],
+    standalone: false
 })
 export class NotesAddComponent {
   router = inject(Router)

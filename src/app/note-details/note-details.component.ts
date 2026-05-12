@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 import { Notes } from '../notes';
 
 @Component({
-  selector: 'app-note-details',
-  template: `
+    selector: 'app-note-details',
+    template: `
     <div>
       <ul class="list-group" *ngFor="let note of notes">
       <li class="list-group-item list-group-item-action list-group-item-info mx-5 my-2">
@@ -15,7 +15,8 @@ import { Notes } from '../notes';
       </ul>
     </div>
   `,
-  styleUrls: ['./note-details.component.css']
+    styleUrls: ['./note-details.component.css'],
+    standalone: false
 })
 export class NoteDetailsComponent {
   @Input() notes!: Notes[];

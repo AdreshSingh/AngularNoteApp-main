@@ -83,3 +83,9 @@ UPDATE tsconfig.json (931 bytes)
 
 ❯ Adds `BootstrapContext` to `bootstrapApplication` calls in `main.server.ts` to support server rendering.
   Migration completed (No changes made).
+
+## Version: 18 to 19
+❯ Replaces `APP_INITIALIZER`, `ENVIRONMENT_INITIALIZER` & `PLATFORM_INITIALIZER` respectively with `provideAppInitializer`, `provideEnvironmentInitializer` & `providePlatformInitializer`.
+  Migration completed (No changes made).
+
+## Version: 19 to 20
